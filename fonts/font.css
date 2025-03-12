@@ -1,0 +1,33 @@
+@font-face {
+  /* 
+  Используй размеры 
+  regular - 400
+  medium - 500
+  semi bold - 600
+  bold - 700
+  */
+  font-family: Inter;
+  src:
+    url(./Inter-VariableFont_opsz\,wght.ttf) format('TrueType');
+  font-display: swap;
+}
+
+@font-face {
+  /* 
+  Используй размеры 
+  regular - 400
+  maedium - 500
+  semi bold - 600
+  */
+  font-family: Montserrat;
+  src:
+    url(./Montserrat-VariableFont_wght.ttf) format('TrueType');
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: DM Sans;
+  src:
+    url(./DMSans_24pt-Medium.ttf) format('TrueType');
+  font-display: swap;
+}
