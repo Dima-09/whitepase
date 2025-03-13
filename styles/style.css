@@ -163,3 +163,10 @@
   min-height: 549px;
 }
 
+.work-management{
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  padding: 140px 220px;
+}
+
