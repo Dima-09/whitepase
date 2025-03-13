@@ -1,14 +1,116 @@
 /* Переменные цветов */
 
-
-
-.header{
-  padding: 16px 220px;
+:root {
+  --primary-dark-blue: #043873;
+  --primary-blue: #4F9CF9;
+  --secondary-yellow: #FFE492;
+  --secondary-blue: #A7CEFC;
+  --secondary-white: #FFFFFF;
+  --secondary-black: #212529;
 }
 
-.logo{
+
+/* Переиспользуемые блоки */
+
+.button{
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  background-color: var(--primary-blue);
+  color: var(--secondary-white);
+  border-radius: 8px;
+  border-style: none;
+  padding: 16px 24px;
+  cursor: pointer;
+  letter-spacing: -2;
+}
+
+.header__button-icon_arrow::after{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background-image: url(../images/button-arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Основной код */
+
+.header {
+  padding: 16px 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-dark-blue);
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__logo-img{
+  width: 37px;
+}
+
+.header__logo-text{
   font-family: Inter, sans-serif;
   font-size: 28px;
   font-weight: 700;
-  text-decoration: none;
+  color: var(--secondary-white);
+  letter-spacing: 2.8%;
 }
+
+.header__menu{
+  display: flex;
+  column-gap: 60px;
+}
+
+.header-menu-links-list {
+  display: flex;
+  list-style: none;
+  column-gap: 42px;
+  color: var(--secondary-white);
+  align-items: center;
+}
+
+.header__link {
+  font-family: DM Sans;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 23px;
+}
+
+.header__link::after{
+  content: "";
+  display: inline-block;
+  margin-left: 20px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/list-item-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__login-try {
+  display: flex;
+  column-gap: 24px;
+  list-style: none;
+}
+
+.header__button-login{
+  background-color: var(--secondary-yellow);
+  color: var(--primary-dark-blue);
+  padding: 18.5px 40px; 
+}
+
+.header__button-try{
+  padding: 18.5px 24px;
+}
+
