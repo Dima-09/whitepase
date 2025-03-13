@@ -44,7 +44,6 @@
   padding: 16px 220px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: var(--primary-dark-blue);
 }
 
@@ -70,6 +69,7 @@
 .header__menu{
   display: flex;
   column-gap: 60px;
+  align-items: center;
 }
 
 .header-menu-links-list {
@@ -77,7 +77,6 @@
   list-style: none;
   column-gap: 42px;
   color: var(--secondary-white);
-  align-items: center;
 }
 
 .header__link {
