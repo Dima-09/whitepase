@@ -23,7 +23,6 @@
   border-style: none;
   padding: 16px 24px;
   cursor: pointer;
-  letter-spacing: -2;
 }
 
 .container{
@@ -88,11 +87,14 @@
 .decorative-underlining::after{
   content: "";
   width: 100%;
-  height: 10px;
-  border-bottom: 10px solid red;
+  height: 80%;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 0;
+  background-image: url(../images/underlining.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 /* Основной код */
@@ -195,6 +197,10 @@
   row-gap: 100px;
   padding: 140px 220px;
   color: var(--secondary-black);
+  background-image: url(../images/whirlpool.svg);
+  background-repeat: no-repeat;
+  background-size: 1100px 448px;
+  background-position:-250px 265px;
 }
 
 .work-management-project-management__container{
@@ -230,5 +236,35 @@
   background-image: url(../images/work-together-image.svg);
   background-size: cover;
   background-position: center;
+}
+
+.extension{
+  position: relative;
+  z-index: 0;
+  padding: 140px 220px;
+  background-color: var(--primary-dark-blue);
+  color: var(--secondary-white);
+}
+
+.extension__container{
+  gap: 98px;
+}
+
+/* .extension__description{
+  width: ;
+} */
+
+.extension__title{
+  font-size: 72px;
+}
+
+.extension__button{
+  padding: 20px 40px;
+}
+
+.extension__decoration{
+  width: 686px;
+  height: 479px;
+  flex-shrink: 0;
 }
 
