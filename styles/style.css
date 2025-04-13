@@ -9,7 +9,6 @@
   --secondary-black: #212529;
 }
 
-
 /* Переиспользуемые блоки */
 
 .button{
@@ -112,6 +111,7 @@
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -1%;
+  line-height: 23px;
 }
 
 .card__feature-list{
@@ -156,6 +156,88 @@
   padding: 16px 40px;
   font-size: 16px;
   letter-spacing: -1%;
+  line-height: 19px;
+}
+
+.comment{
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  border-radius: 10px;
+  background-color: var(--primary-blue);
+  color: var(--secondary-white);
+}
+
+.comment_bg-color_white{
+  background-color: var(--secondary-white);
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+  color: var(--secondary-black);
+}
+
+.comment__header{
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-bottom: 1px solid var(--secondary-white);
+}
+
+.comment__header_border-cl_black{
+  border-color: var(--secondary-black);
+}
+
+.quotes{
+  width: 86px;
+  height: 61px;
+  background-image: url(../images/Quote-white.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.quotes_color_blue{
+  background-image: url(../images/Quote.svg);
+}
+
+.comment__header-text{
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  letter-spacing: -1%;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.comment__footer{
+  display: flex;
+  gap: 42px;
+  align-items: center;
+}
+
+.comment__avatar{
+  width: 95px;
+  height: 95px;
+}
+
+.comment__footer-description{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment__footer-title{
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2%;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.comment__footer-text{
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  letter-spacing: -2%;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .button_icon-arrow_10px::after{
@@ -486,6 +568,10 @@
   background-position: center;
 }
 
+.your-data__button{
+  padding: 20px 40px;
+}
+
 .sponsors{
   padding: 140px 220px;
   display: flex;
@@ -500,8 +586,122 @@
 
 .sponsors__list{
   width: 100%;
+  height: 71px;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.apps{
+  background-color: var(--primary-dark-blue);
+  background-image: url(../images/lines-two.svg);
+  background-size: cover;
+  background-position: center;
+  padding: 140px 220px;
+  color: var(--secondary-white);
+}
+
+.apps__container{
+  gap: 100px;
+}
+
+.apps__decoration{
+  width: 582px;
+  height: 470px;
+  background-color: transparent;
+  background-image: url(../images/Apps.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.apps__title{
+  font-size: 72px;
+  /* padding-right: 5px; */
+}
+
+.apps__button{
+  padding: 20px 40px;
+}
+
+.comments{
+  padding: 140px 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.comments__title{
+  font-family: Inter, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 3%;
+}
+
+.comments__list{
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.comments__slider{
+  width: 60px;
+  height: 12px;
+  background-image: url(../images/Slider.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.trial{
+  display: flex;
+  justify-content: center;
+  padding: 140px 220px;
+  text-align: center;
+  background-color: var(--primary-dark-blue);
+  color: var(--secondary-white);
+}
+
+.trial__container{
+  width: 608px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.trial__title{
+  font-family: Inter, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 1%;
+}
+
+.trial__header{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trial__text{
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 32px;
+}
+
+.trial__button{
+  padding: 20px 40px;
+  font-size: 16px;
+  line-height: 19px;
+  align-self: center;
+}
+
+.trial__os-list{
+  height: 60px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
 }
